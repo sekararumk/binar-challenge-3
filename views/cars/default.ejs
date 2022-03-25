@@ -1,0 +1,83 @@
+<div id="content">
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto side-bar">
+          <div class="side-bar__item">
+            <p class="item-3">CARS</p>
+            <p class="item-4">List Car</p>
+          </div>
+        </div>
+        <div class="col" id="section-add-car">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+              <div class="col">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb" id="breadcrumb-style">
+                    <li class="breadcrumb-item"><a href="#">Cars</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Car
+                    </li>
+                  </ol>
+                </nav>
+                <div class="row d-flex justify-content-between">
+                  <div class="col">
+                    <p style="font-size: 20px"><b>List Car</b></p>
+                  </div>
+                  <div class="col-auto">
+                    <a
+                      href="/cars/add"
+                      class="btn btn-primary"
+                      id="btn-add-car"
+                    >
+                      <i class="bx bx-plus"></i>
+                      Add new card
+                    </a>
+                  </div>
+                </div>
+                <div class="my-2">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary active"
+                    style="color: #0d28a6; background-color: #cfd4ed"
+                    id="btn-category-active"
+                  >
+                    All
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="btn-category"
+                  >
+                    Small
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="btn-category"
+                  >
+                    Medium
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="btn-category"
+                  >
+                    Large
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <%- include('../partials/listCar.ejs') %> 
+              <%- include('../partials/listCar.ejs') %> 
+              <%- include('../partials/listCar.ejs') %> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

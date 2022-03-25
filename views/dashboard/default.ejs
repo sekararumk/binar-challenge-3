@@ -1,0 +1,124 @@
+<div id="content">
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto side-bar">
+          <div class="side-bar__item">
+            <p class="item-1">DASHBOARD</p>
+            <p class="item-2">Dashboard</p>
+          </div>
+        </div>
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" id="breadcrumb-style">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Dashboard
+              </li>
+            </ol>
+          </nav>
+          <p style="font-size: 20px"><b>Dashboard</b></p>
+          <div class="my-4">
+            <h6 class="text-label"><img src="/img/Rectangle 9.png" alt="" class="mr-2"/><b>List Order</b></h6>
+            <table id="myTable" class="table">
+              <thead class="table">
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">User Email</th>
+                  <th scope="col">Car</th>
+                  <th scope="col">Start Rent</th>
+                  <th scope="col">Finish Rent</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% listOrder.forEach ( item => { %>
+                  <tr class="bg-white">
+                    <td><%= item.no %></td>
+                    <td><%= item.email %></td>
+                    <td><%= item.car %></td>
+                    <td><%= item.start %></td>
+                    <td><%= item.finish %></td>
+                    <td><%= item.price %></td>
+                    <td><%= item.status %></td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end" id="page">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true" style="color:#0D28A6;">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#" id="page-active">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">3</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">...</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">9</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true" style="color:#0D28A6;">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="my-4">
+            <h6 class="text-label"><img src="/img/Rectangle 9.png" alt="" class="mr-2"/><b>List Car</b></h6>
+            <table id="myTable" class="table">
+              <thead class="table">
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Start Rent</th>
+                  <th scope="col">Finish Rent</th>
+                  <th scope="col">Created at</th>
+                  <th scope="col">Updated at</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% listCar.forEach ( item => { %>
+                  <tr class="bg-white">
+                    <td><%= item.no %></td>
+                    <td><%= item.name %></td>
+                    <td><%= item.category %></td>
+                    <td><%= item.price %></td>
+                    <td><%= item.start %></td>
+                    <td><%= item.finish %></td>
+                    <td><%= item.created %></td>
+                    <td><%= item.updated %></td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end" id="page">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true" style="color:#0D28A6;">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#" id="page-active">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">3</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">...</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="page-item">9</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true" style="color:#0D28A6;">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

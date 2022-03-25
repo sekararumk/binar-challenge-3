@@ -1,0 +1,33 @@
+
+	<!-- SIGN IN -->
+	<div id="sign-in" class="col">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<div class="sign-in__img">
+						<img src="/img/image 2.png" alt="" class="car-image" />
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="sign-in__form">
+						<div class="mb-4">
+							<img src="/img/Rectangle_62.png" alt="" class="mb-5 logo-img" />
+							<h3 class="mb-5"><b>Welcome, Admin BCR</b></h3>
+						<form action="/auth/login" method="POST">
+							<div class="mb-4">
+								<label for="exampleInputEmail1" class="form-label">Email</label>
+								<input type="email" class="form-control" placeholder="Contoh: johndee@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
+							</div>
+							<div class="mb-4">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" placeholder="6+ karakter" id="exampleInputPassword1" name="password">
+							</div>
+							<button type="submit" class="btn btn-primary mt-4">Sign In</button>
+                            
+						</form>
+                        <a class="btn btn-primary mt-4" href="/auth/register">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

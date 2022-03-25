@@ -1,0 +1,408 @@
+/* HOME DASHBOARD */
+
+/* SIDE MENU */
+
+#main-container {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#side-menu {
+    background-color: #0D28A6;
+    flex-basis: 40px;
+    padding: 10px 15px;
+}
+
+.home-icon {
+    font-size: 20px;
+}
+
+.truck-icon {
+    font-size: 20px;
+}
+
+/* .main-nav { } */
+
+.main-nav__item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 5px;
+    margin-bottom: 35px;
+    line-height: 10px;
+    height: 24px;
+}
+
+.main-nav__item a:hover {
+    font-weight: bold;
+}
+
+.main-nav__item a:before {
+    content: "";
+    background-color:white;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.main-nav__item a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* END OF SIDE MENU */
+
+/* HEADER */
+#main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color:#E5E5E5;
+}
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.menu-icon {
+    font-size: 28px;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 99;
+    color: lightgrey;
+    padding: 12px 5px;
+    align-items: center;
+}
+
+#btn-search{
+    background-color: white;
+    color: #0D28A6;
+    outline: 1px solid;
+    border-radius: 0;
+    text-decoration: none;
+    border-color: none;
+}
+
+.chevron-icon {
+    font-size: 30px;
+}
+
+/* END OF HEADER */
+
+/* CONTENT */
+
+.side-bar {
+    background-color: white;
+    min-height: 100vh;
+    padding-left: 0;
+}
+
+.side-bar__item .item-1{
+    font-size: 16px;
+    color:#8A8A8A;
+    font-weight:bold;
+    padding-top: 52px;
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+.side-bar__item .item-2{
+    font-weight:bold;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #CFD4ED;
+    width: 110%;
+}
+
+#breadcrumb-style{
+    background-color:#F4F5F7;
+}
+
+.breadcrumb {
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.breadcrumb-item {
+    font-size: 13px;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+}
+
+.table {
+    background-color: #CFD4ED;
+}
+
+/* END OF CONTENT */
+/* END OF HOME DASHBOARD */
+
+/* HEADER */
+#main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color:#E5E5E5;
+}
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.menu-icon {
+    font-size: 28px;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 99;
+    color: lightgrey;
+    padding: 12px 5px;
+    align-items: center;
+}
+
+.btn-outline{
+    background-color: white;
+    color: #0D28A6;
+    outline: 1px solid;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.chevron-img {
+    font-size: 30px;
+}
+
+/* END OF HEADER */
+
+/* CONTENT */
+#content {
+    background-color:#F4F5F7;
+}
+
+.side-bar {
+    background-color: white;
+    min-height: 100vh;
+    padding-left: 0;
+}
+
+.side-bar__item .item-1{
+    font-size: 16px;
+    color:#8A8A8A;
+    font-weight:bold;
+    padding-top: 52px;
+    padding-left: 20px;
+    margin-right: 80px;
+}
+
+.side-bar__item .item-2{
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #CFD4ED;
+    width: 108%;
+}
+
+.breadcrumb {
+    background-color:#E5E5E5;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.breadcrumb-item {
+    font-size: 13px;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+}
+
+.table {
+    background-color: #CFD4ED;
+}
+
+#page-header {
+    background-color: white;
+    color: #0D28A6;
+}
+#page-active {
+    background-color: #0D28A6;
+    color: white;
+    border-color: #0D28A6;
+}
+
+#page-item {
+    color: #E5E5E5;
+
+}
+/* END OF CONTENT */
+/* END OF HOME DASHBOARD */
+
+/* CARS PAGE*/
+.side-bar__item .item-3{
+    font-size: 16px;
+    color:#8A8A8A;
+    font-weight:bold;
+    padding-top: 52px;
+    padding-left: 20px;
+    margin-right: 100px;
+}
+
+.side-bar__item .item-4{
+    font-weight:bold;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #CFD4ED;
+    width: 110%;
+}
+
+#btn-category-active {
+    font-weight: bold;
+    border-radius: 3px;
+    margin-right: 12px;
+}
+
+#btn-category {
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 12px;
+    color: #AEB7E1;
+    border-color: #AEB7E1;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #0D28A6;
+    background-color: #CFD4ED;
+    text-decoration: none;
+}
+
+#section-add-car {
+    margin-left: -12px;
+}
+
+#btn-add-car {
+    background-color: #0D28A6;
+    color: white;
+    border-color: #0D28A6;
+}
+
+.card {
+    display: flex;
+    width: 341px;
+    height: 462px;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-title {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.card .text-2 {
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: white;
+    font-weight: bold;
+    width: 135px;
+    height: 48px;
+    color: #FA2C5A;
+    margin-right: 25px;
+    margin-left: 5px;
+    border-radius: 2px;
+
+}
+
+.btn .trash-icon {
+    margin-right: 7px;
+}
+  
+.btn-success {
+    font-weight: bold;
+    width: 135px;
+    height: 48px;
+    background-color: #5CB85F;
+    border-radius: 2px;
+}
+
+.btn .edit-icon {
+    margin-right: 9px;
+}
+
+.btn-danger:hover {
+    background-color: white;
+    color: #FA2C5A;
+}
+
+
+.btn-success:hover {
+    background-color: #5CB85F;
+    color: white;
+}
+
+.btn .img-trash {
+    size: 16px;
+}
+/* END OF CARS PAGE */
+
+/* ADD CAR PAGE */
+
+.form {
+    background-color: white;
+    height: 450px;
+    border-radius: 2px;
+}
+
+
+#btn-cancel {
+    background-color: white;
+    color: #0D28A6;
+    margin-right: 10px;
+}
+
+#btn-save {
+    background-color: #0D28A6;
+    color: white;
+}
+/* END OF ADD CAR PAGE */
+
+/* EDIT CAR PAGE */
+#btn-save-edit {
+    background-color: #CFD4ED;
+    color: #FFFFFF;
+}
+
+/* END OFF EDIT CAR PAGE */
